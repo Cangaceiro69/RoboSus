@@ -6,10 +6,10 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 import Home from "./pages/Home";
-// import Sobre from "./pages/Sobre";
-// import Cursos from "./pages/Cursos";
+import Sobre from "./pages/Sobre";
+import Cursos from "./pages/Cursos";
 // import Projetos from "./pages/Projetos";
-// import Contato from "./pages/Contato";
+import Contato from "./pages/Contato";
 
 import "./index.css";
 
@@ -22,10 +22,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <main className="flex-grow pt-24">
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/sobre" element={<Sobre />} />
+          <Route path="/sobre" element={<Sobre />} />
           <Route path="/cursos" element={<Cursos />} />
-          <Route path="/projetos" element={<Projetos />} />
-          <Route path="/contato" element={<Contato />} /> */}
+          {/* <Route path="/projetos" element={<Projetos />} /> */}
+          <Route path="/contato" element={<Contato />} />
         </Routes>
       </main>
 

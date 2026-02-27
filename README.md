@@ -1,16 +1,37 @@
-# React + Vite
+# Robótica Sustentável — Site
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Pequeno site institucional para o projeto "Robótica Sustentável", com UI em React + Vite + Tailwind.
 
-Currently, two official plugins are available:
+## Funcionalidades principais
+- Banner rotativo automático (carousel) — componente [`Home`](src/components/Home.jsx).  
+- Seção "Sobre o Instituto" com vídeo institucional embutido.  
+- Lista de Pontos de Coleta com link para contato.  
+- Cards de Eventos.  
+- Marquee de empresas parceiras (animação via CSS).  
+- Tema claro/escuro com persistência em localStorage — controle no [`Header`](src/components/Header.jsx).  
+- Rodapé com contato e redes — [`Footer`](src/components/Footer.jsx).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Como rodar
+```sh
+npm install
+npm run dev
+```
 
-## React Compiler
+## Estrutura relevante
+- Páginas e componentes:
+  - [`Home`](src/components/Home.jsx) — conteúdo principal da home.
+  - [`Header`](src/components/Header.jsx) — navegação, menu mobile e toggle de tema.
+  - [`Footer`](src/components/Footer.jsx) — informação de contato e redes.
+  - Rotas definidas em [src/main.jsx](src/main.jsx).
+- Configuração:
+  - [package.json](package.json) — scripts e dependências.
+  - [vite.config.js](vite.config.js)
+  - [tailwind.config.js](tailwind.config.js)
+  - [index.html](index.html)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Observações rápidas
+- As páginas adicionais (`/sobre`, `/cursos`, `/projetos`, `/contato`) estão preparadas em [src/Pages](src/Pages) e importadas/comentadas em [src/main.jsx](src/main.jsx).
+- Animação de logos está em [src/index.css](src/index.css).
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Contatos
+- Editar textos, imagens e links diretamente em [`src/components/Home.jsx`](src/components/Home.jsx) e nos componentes correspondentes.

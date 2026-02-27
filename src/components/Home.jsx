@@ -63,7 +63,7 @@ function Home() {
               <div className="aspect-video rounded-xl overflow-hidden shadow-lg">
                 <iframe
                   className="w-full h-full"
-                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                  src="https://www.youtube.com/embed/b22XbWmYgAQ"
                   title="Vídeo Institucional"
                   allowFullScreen
                 ></iframe>

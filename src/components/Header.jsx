@@ -74,10 +74,10 @@ function Header() {
       {menuOpen && (
         <div className="md:hidden bg-green-700 dark:bg-green-900 px-6 py-6 space-y-4 text-lg font-medium">
           <Link to="/" onClick={() => setMenuOpen(false)} className="block">Home</Link>
-          <Link to="/sobre" onClick={() => setMenuOpen(false)} className="block">Sobre</Link>
           <Link to="/cursos" onClick={() => setMenuOpen(false)} className="block">Cursos</Link>
           <Link to="/projetos" onClick={() => setMenuOpen(false)} className="block">Projetos</Link>
           <Link to="/contato" onClick={() => setMenuOpen(false)} className="block">Contato</Link>
+          <Link to="/sobre" onClick={() => setMenuOpen(false)} className="block">Quem Somos</Link>
         </div>
       )}
     </header>
