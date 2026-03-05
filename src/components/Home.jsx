@@ -1,32 +1,48 @@
-import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+
+import Banner from "../assets/0011.png";
+
+
+import Zenir from "../assets/Logos/zenir-moveis-seeklogo.png";
+import Coca from "../assets/Logos/solar-coca-cola-seeklogo.png";
+import Pague from "../assets/Logos/pague-menos-seeklogo.png";
+import Farias from "../assets/Logos/organizacao-educacional-farias-brito-seeklogo.png";
+
+const empresas = [
+  Zenir,
+  Coca,
+  Pague,
+  Farias,
+  Zenir,
+  Coca,
+  Pague,
+  Farias
+];
 
 function Home() {
-  const banners = [
-    "https://via.placeholder.com/1200x500?text=Banner+1",
-    "https://via.placeholder.com/1200x500?text=Banner+2",
-    "https://via.placeholder.com/1200x500?text=Banner+3",
-  ];
-
-  const [current, setCurrent] = useState(0);
+  const [index, setIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % banners.length);
-    }, 4000);
+      setIndex((prevIndex) => (prevIndex + 1) % empresas.length);
+    }, 1500);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="w-full pt-24">
 
-      {/* 🎞 Banner Rolante (MENOR AGORA) */}
-      <section className="w-full overflow-hidden">
+      
+
+    <div className="w-full">
+
+      {/* 🎞 Banner */}
+      <section className="w-100% flex justify-center">
         <img
-          src={banners[current]}
+          src={Banner}
           alt="Banner"
-          className="w-full h-[350px] md:h-[400px] object-cover transition-all duration-700"
+          className="w-100% object-cover"
         />
       </section>
 
@@ -81,7 +97,13 @@ function Home() {
         </h2>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto text-center">
-          {["Centro", "Aldeota", "Meireles"].map((bairro, index) => (
+          {[" Av. Dom Manuel, 1020 - Centro, Fortaleza - CE, 60060-090", 
+          "Rua Torres Câmara, 600 - Casa 47 - Aldeota, Fortaleza - CE, 60150-060.", 
+          "Rua Francisquinha Portela, 1050 c Altos - Fortaleza - CE, 60351-840.", 
+          "Av. Barão de Studart, 1980 - Mezanino - Aldeota, Fortaleza - CE, 60120-001", 
+          "Av. Barão de Studart, 1980 - 1° ANDAR - Aldeota, Fortaleza - CE, 60120-001", 
+          "R. Carneiro da Cunha, 180 - Jacarecanga, Fortaleza - CE, 60010-470"
+          ].map((bairro, index) => (
             <div
               key={index}
               className="bg-white dark:bg-gray-800 shadow-md p-8 rounded-xl transition-colors duration-300"
@@ -89,76 +111,91 @@ function Home() {
               <h3 className="text-xl font-semibold mb-4 dark:text-white">
                 {bairro}
               </h3>
-              <p className="text-gray-600 dark:text-gray-300">
-                Rua Exemplo, 123 — Fortaleza
-              </p>
             </div>
           ))}
         </div>
 
         <div className="text-center mt-12">
           <Link
-            to="/contato"
+            to="/coleta"
             className="bg-green-600 text-white px-8 py-3 rounded-lg hover:bg-green-700 transition"
           >
-            Quero participar!
+            Mais Locais
           </Link>
         </div>
       </section>
 
-      {/* 🎉 Eventos */}
+      {/* 🚀 Projetos dos Alunos */}
       <section className="py-20 px-6 bg-gray-100 dark:bg-gray-900 transition-colors duration-300">
         <h2 className="text-4xl font-bold text-green-700 dark:text-green-400 text-center mb-12">
-          Próximos Eventos
+          Projetos dos Alunos
         </h2>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {[1, 2, 3].map((evento) => (
+
+          {[
+            {
+              titulo: "Robô com lixo eletrônico",
+              img: "https://via.placeholder.com/400x250",
+              desc: "Projeto feito reutilizando peças de computadores antigos."
+            },
+            {
+              titulo: "Carrinho movido a energia solar",
+              img: "https://via.placeholder.com/400x250",
+              desc: "Experimento de energia sustentável criado por alunos."
+            },
+            {
+              titulo: "Braço robótico reciclado",
+              img: "https://via.placeholder.com/400x250",
+              desc: "Braço robótico feito com motores reaproveitados."
+            }
+          ].map((projeto, index) => (
+
             <div
-              key={evento}
+              key={index}
               className="bg-white dark:bg-gray-800 shadow-md rounded-xl overflow-hidden transition-colors duration-300"
             >
               <img
-                src={`https://via.placeholder.com/400x250?text=Evento+${evento}`}
-                alt="Evento"
+                src={projeto.img}
+                alt={projeto.titulo}
                 className="w-full"
               />
+
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2 dark:text-white">
-                  Evento {evento}
+                  {projeto.titulo}
                 </h3>
+
                 <p className="text-gray-600 dark:text-gray-300 text-sm">
-                  Evento focado em conscientização ambiental.
+                  {projeto.desc}
                 </p>
               </div>
             </div>
+
           ))}
+
         </div>
       </section>
 
       {/* 🤝 Empresas Parceiras */}
-      <section className="py-16 bg-gray-100 dark:bg-gray-900 overflow-hidden">
-  <h2 className="text-3xl font-bold text-center mb-10 text-green-600">
+      {/* 🤝 Empresas Parceiras */}
+<section className="py-16 bg-gray-100 dark:bg-gray-900 transition">
+
+  <h2 className="text-3xl font-bold text-center mb-10 text-gray-800 dark:text-white">
     Empresas Parceiras
   </h2>
 
-  <div className="relative w-full overflow-hidden">
-    <div className="flex gap-16 animate-scroll whitespace-nowrap">
-      
-      {/* DUPLICA AS LOGOS */}
-      {[...Array(2)].map((_, i) => (
-        <div key={i} className="flex gap-16">
-          <img src="https://via.placeholder.com/150x80" className="h-16" />
-          <img src="https://via.placeholder.com/150x80" className="h-16" />
-          <img src="https://via.placeholder.com/150x80" className="h-16" />
-          <img src="https://via.placeholder.com/150x80" className="h-16" />
-        </div>
-      ))}
+  <div className="flex justify-center items-center h-24">
 
-    </div>
+    <img
+      src={empresas[index]}
+      alt="Empresa parceira"
+      className="h-20 object-contain grayscale hover:grayscale-0 transition"
+    />
+
   </div>
-</section>
 
+</section>
     </div>
   );
 }

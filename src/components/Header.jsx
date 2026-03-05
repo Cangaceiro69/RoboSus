@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes, faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
+import Logo from "../assets/logoTransW.png";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -39,18 +40,18 @@ function Header() {
         
         <Link to="/">
           <img
-            src="https://via.placeholder.com/120x40?text=LOGO"
+            src={Logo}
             alt="Logo"
-            className="h-10"
+            className="h-16 md:h-20 object-contain"
           />
         </Link>
 
         <nav className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 gap-8 text-lg font-medium">
           <Link to="/">Home</Link>
           <Link to="/cursos">Cursos</Link>
-          <Link to="/projetos">Projetos</Link>
+          <Link to="/coleta">Coleta</Link>
           <Link to="/contato">Contato</Link>
-          <Link to="/sobre">Quem Somos</Link>
+          <Link to="/sobre">Quem Somos</Link> 
         </nav>
 
         <div className="flex items-center gap-4">
@@ -78,6 +79,7 @@ function Header() {
           <Link to="/projetos" onClick={() => setMenuOpen(false)} className="block">Projetos</Link>
           <Link to="/contato" onClick={() => setMenuOpen(false)} className="block">Contato</Link>
           <Link to="/sobre" onClick={() => setMenuOpen(false)} className="block">Quem Somos</Link>
+          <Link to="/coleta" onClick={() => setMenuOpen(false)} className="block">Coleta</Link>
         </div>
       )}
     </header>

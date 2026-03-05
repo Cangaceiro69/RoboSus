@@ -8,6 +8,7 @@ import {
   faEnvelope,
   faMapLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
+import Logo from "../assets/logoTransW.png";
 
 function Footer() {
   return (
@@ -17,13 +18,11 @@ function Footer() {
         {/* Logo + descrição */}
         <div>
           <img
-            src="https://via.placeholder.com/120x40?text=LOGO"
+            src={Logo}
             alt="Logo"
-            className="h-10 mb-4"
+            className="h-40 md:h-40 object-contain"
           />
-          <p className="text-sm text-green-100">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
+          
         </div>
 
         {/* Contato */}
@@ -35,24 +34,26 @@ function Footer() {
             {/* Mapa */}
             <li>
               <a
-                href="https://www.google.com/maps/search/?api=1&query=Fortaleza+CE"
+                href="https://maps.app.goo.gl/t3X6Yp22W5aXGMe16"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 hover:text-green-300 transition"
               >
                 <FontAwesomeIcon icon={faMapLocationDot} />
-                Fortaleza - CE
+                Rua Francisquinha Portela, Quintino Cunha 1050
               </a>
             </li>
 
             {/* Email */}
             <li>
               <a
-                href="mailto:contato@ongesperanca.org"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=roboticasustentavel@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-2 hover:text-green-300 transition"
               >
                 <FontAwesomeIcon icon={faEnvelope} />
-                contato@ongesperanca.org
+                roboticasustentavel@gmail.com
               </a>
             </li>
           </ul>
@@ -66,7 +67,7 @@ function Footer() {
             
             {/* Instagram */}
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/robotica_sustentavel/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-green-300 transition"
@@ -76,7 +77,7 @@ function Footer() {
 
             {/* WhatsApp */}
             <a
-              href="https://wa.me/5585999999999"
+              href="https://wa.me/5585996214279"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-green-300 transition"
