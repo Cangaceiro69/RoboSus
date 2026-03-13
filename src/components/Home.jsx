@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
-import Banner from "../assets/0011.png";
+// import Banner from "../assets/0011.png";
+import Banner from "../assets/10585854.jpg";
 
 
 import Zenir from "../assets/Logos/zenir-moveis-seeklogo.png";
@@ -38,13 +39,13 @@ function Home() {
     <div className="w-full">
 
       {/* 🎞 Banner */}
-      <section className="w-100% flex justify-center">
-        <img
-          src={Banner}
-          alt="Banner"
-          className="w-100% object-cover"
-        />
-      </section>
+      <section className="w-full h-[35rem] overflow-hidden">
+  <img
+    src={Banner}
+    alt="Banner"
+    className="w-full h-full object-cover"
+  />
+</section>
 
       {/* 🏢 Sobre o Instituto */}
       <section className="py-20 px-6 bg-gray-100 dark:bg-gray-900 transition-colors duration-300">
@@ -189,7 +190,7 @@ function Home() {
     <img
       src={empresas[index]}
       alt="Empresa parceira"
-      className="h-20 object-contain grayscale hover:grayscale-0 transition"
+      className="h-20 object-contain"
     />
 
   </div>
