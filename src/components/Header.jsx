@@ -46,11 +46,12 @@ function Header() {
           />
         </Link>
 
-        <nav className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 gap-8 text-lg font-medium">
+        <nav className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 gap-8 text-lg font-medium whitespace-nowrap">
           <Link to="/">Home</Link>
           <Link to="/cursos">Cursos</Link>
           <Link to="/coleta">Coleta</Link>
           <Link to="/contato">Contato</Link>
+          <Link to="/voluntarios">Voluntários</Link>
           <Link to="/sobre">Quem Somos</Link> 
         </nav>
 
@@ -79,6 +80,7 @@ function Header() {
           <Link to="/coleta" onClick={() => setMenuOpen(false)} className="block">Coleta</Link>
           <Link to="/contato" onClick={() => setMenuOpen(false)} className="block">Contato</Link>
           <Link to="/sobre" onClick={() => setMenuOpen(false)} className="block">Quem Somos</Link>
+          <Link to="/voluntarios" onClick={() => setMenuOpen(false)} className="block">Voluntários</Link>
         </div>
       )}
     </header>

@@ -10,6 +10,7 @@ import Sobre from "./Pages/SobreP";
 import Cursos from "./Pages/CursosP";
 import Contato from "./Pages/ContatoP";
 import Coleta from "./Pages/ColetaP";
+import Voluntarios from "./Pages/VoluntariosP";
 
 import "./index.css";
 
@@ -26,6 +27,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="/cursos" element={<Cursos />} />
           <Route path="/contato" element={<Contato />} />
           <Route path="/coleta" element={<Coleta />} />
+          <Route path="/voluntarios" element={<Voluntarios />} />
         </Routes>
       </main>
 
