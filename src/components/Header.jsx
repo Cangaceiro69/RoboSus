@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes, faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
-import Logo from "../assets/logoTransW.png";
+import Logo from "../assets/TransBranco.png";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);

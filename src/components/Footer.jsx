@@ -8,7 +8,7 @@ import {
   faEnvelope,
   faMapLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
-import Logo from "../assets/logoTransW.png";
+import Logo from "../assets/TransBranco.png";
 
 function Footer() {
   return (
