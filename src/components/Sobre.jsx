@@ -13,64 +13,46 @@ function Sobre() {
     {
       nome: "André Cardoso",
       cargo: "Presidente",
-      descricao:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       foto: FotoPres,
     },
     {
       nome: "Wuller",
       cargo: "Coordenador de educação",
-      descricao:
-        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       foto: FotoCood,
     },
     {
       nome: "Gabriel",
       cargo: "Técnico de Hardware",
-      descricao:
-        "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       foto: FotoHard,
     },
     {
       nome: "Karine Mota",
       cargo: "Marketing",
-      descricao:
-        "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       foto: FotoMark,
     },
     {
       nome: "Victor Almirando",
       cargo: "Comercial",
-      descricao:
-        "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       foto: FotoCorm,
     },
     {
       nome: "Ed Carlos",
       cargo: "Técnico de Robótica",
-      descricao:
-        "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       foto: FotoRobo,
     },
     {
       nome: "Gertrudes",
       cargo: "Organização",
-      descricao:
-        "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       foto: "https://via.placeholder.com/150",
     },
     {
       nome: "Luana",
       cargo: "Administrativo",
-      descricao:
-        "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       foto: "https://via.placeholder.com/150",
     },
     {
       nome: "Matheus Fontenele",
       cargo: "Desenvolvedor Web",
-      descricao:
-        "Progamador Fullstack.",
       foto: FotoProga,
     },
     
@@ -142,12 +124,8 @@ conscientização, oficinas, exposições e parcerias com empresas e instituiç�
                     {membro.nome}
                   </h3>
 
-                  <p className="text-green-600 dark:text-green-400 font-medium mb-3">
+                  <p className="text-green-600 dark:text-green-400 font-big mb-3">
                     {membro.cargo}
-                  </p>
-
-                  <p className="text-gray-600 dark:text-gray-300 text-sm">
-                    {membro.descricao}
                   </p>
                 </div>
               </div>
