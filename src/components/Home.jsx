@@ -4,21 +4,33 @@ import { useState, useEffect } from "react";
 // import Banner from "../assets/0011.png";
 import Banner from "../assets/10585854.jpg";
 
+const LOGO_DEV_PUBLIC_KEY = "pk_cTL0TMS5Th6nYCg8Z8DFig";
 
-import Zenir from "../assets/Logos/zenir-moveis-seeklogo.png";
-import Coca from "../assets/Logos/solar-coca-cola-seeklogo.png";
-import Pague from "../assets/Logos/pague-menos-seeklogo.png";
-import Farias from "../assets/Logos/organizacao-educacional-farias-brito-seeklogo.png";
+function CompanyLogo({ domain }) {
+  return (
+    <img
+      src={`https://img.logo.dev/${domain}?token=${LOGO_DEV_PUBLIC_KEY}`}
+      alt={domain}
+      loading="lazy"
+      className="h-30 object-contain"
+    />
+  );
+}
+
 
 const empresas = [
-  Zenir,
-  Coca,
-  Pague,
-  Farias,
-  Zenir,
-  Coca,
-  Pague,
-  Farias
+  "zenirmoveis.com.br",
+  "coca-colacompany.com",
+  "paguemenos.com.br",
+  "fariasbrito.com.br",
+  "apiguana.com.br",
+  "riomarfortaleza.com.br",
+  "rihappy.com.br",
+  "digitalcollege.com.br",
+  "beachpark.com.br",
+  "ibyte.com.br",
+  "cosampa.com.br",
+  "normatel.com.br"
 ];
 
 function Home() {
@@ -186,14 +198,12 @@ function Home() {
   </h2>
 
   <div className="flex justify-center items-center h-24">
-
-    <img
-      src={empresas[index]}
-      alt="Empresa parceira"
-      className="h-20 object-contain"
-    />
-
+    <CompanyLogo domain={empresas[index]} />
   </div>
+
+  <p className="text-center mt-6 text-gray-600 dark:text-gray-400 text-sm">
+    Entre outras empresas parceiras
+  </p>
 
 </section>
     </div>

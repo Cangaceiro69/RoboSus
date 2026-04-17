@@ -1,4 +1,12 @@
 import FotoProga from "../assets/FotoProga.jpg";
+import FotoMark from "../assets/karine.png";
+import FotoPres from "../assets/andre.png";
+import FotoCood from "../assets/Wuller.jpeg";
+import FotoHard from "../assets/Gabriel.jpeg";
+import FotoCorm from "../assets/victor.png";
+import FotoRobo from "../assets/Carlos.jpeg";
+import FotoOrga from "../assets/karine.png";
+import FotoAdmi from "../assets/karine.png";
 
 function Sobre() {
   const equipe = [
@@ -7,42 +15,42 @@ function Sobre() {
       cargo: "Presidente",
       descricao:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      foto: "https://via.placeholder.com/150",
+      foto: FotoPres,
     },
     {
       nome: "Wuller",
       cargo: "Coordenador de educação",
       descricao:
         "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      foto: "https://via.placeholder.com/150",
+      foto: FotoCood,
     },
     {
       nome: "Gabriel",
       cargo: "Técnico de Hardware",
       descricao:
         "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      foto: "https://via.placeholder.com/150",
+      foto: FotoHard,
     },
     {
       nome: "Karine Mota",
       cargo: "Marketing",
       descricao:
         "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      foto: "https://via.placeholder.com/150",
+      foto: FotoMark,
     },
     {
       nome: "Victor Almirando",
       cargo: "Comercial",
       descricao:
         "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      foto: "https://via.placeholder.com/150",
+      foto: FotoCorm,
     },
     {
       nome: "Ed Carlos",
       cargo: "Técnico de Robótica",
       descricao:
         "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      foto: "https://via.placeholder.com/150",
+      foto: FotoRobo,
     },
     {
       nome: "Gertrudes",
@@ -62,7 +70,7 @@ function Sobre() {
       nome: "Matheus Fontenele",
       cargo: "Desenvolvedor Web",
       descricao:
-        "Progamador Fullstack. Conheci o Instituto em 2026 durante uma aula da faculdade e o professor André falou sobre o instituito mais eu ja o conhecia ele de um curso que fizemos juntos.",
+        "Progamador Fullstack.",
       foto: FotoProga,
     },
     
