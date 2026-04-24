@@ -44,11 +44,11 @@ function Contato() {
                   Telefone
                 </h3>
                 <a
-                  href="https://wa.me/5585996214279"
+                  href="https://wa.me/5585996424106"
                   target="_blank"
                   className="text-gray-600 dark:text-gray-300 hover:text-green-600 transition"
                 >
-                  (85) 99621-4279
+                  (85) 99642-4106 
                 </a>
               </div>
             </div>

@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
+import Carrinho from "../assets/Carrinho.jpeg";
+import Ventilador from "../assets/Ventilador.jpeg";
+import Torre from "../assets/TorreEolica.jpeg";
 // import Banner from "../assets/0011.png";
 import Banner from "../assets/10585854.jpg";
 
@@ -148,19 +151,16 @@ function Home() {
 
           {[
             {
-              titulo: "Robô com lixo eletrônico",
-              img: "https://via.placeholder.com/400x250",
-              desc: "Projeto feito reutilizando peças de computadores antigos."
+              titulo: "Carro de papelão",
+              img: Carrinho,
             },
             {
-              titulo: "Carrinho movido a energia solar",
-              img: "https://via.placeholder.com/400x250",
-              desc: "Experimento de energia sustentável criado por alunos."
+              titulo: "Ventilador",
+              img: Ventilador,
             },
             {
-              titulo: "Braço robótico reciclado",
-              img: "https://via.placeholder.com/400x250",
-              desc: "Braço robótico feito com motores reaproveitados."
+              titulo: "torre eólica",
+              img: Torre,
             }
           ].map((projeto, index) => (
 
@@ -171,17 +171,13 @@ function Home() {
               <img
                 src={projeto.img}
                 alt={projeto.titulo}
-                className="w-full"
+                className="w-full h-56 object-cover"
               />
 
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2 dark:text-white">
+                <h3 className="text-xl font-semibold mb-2 dark:text-white text-center">
                   {projeto.titulo}
                 </h3>
-
-                <p className="text-gray-600 dark:text-gray-300 text-sm">
-                  {projeto.desc}
-                </p>
               </div>
             </div>
 

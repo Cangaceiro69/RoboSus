@@ -5,8 +5,10 @@ import FotoCood from "../assets/Wuller.jpeg";
 import FotoHard from "../assets/Gabriel.jpeg";
 import FotoCorm from "../assets/victor.png";
 import FotoRobo from "../assets/Carlos.jpeg";
-import FotoOrga from "../assets/karine.png";
-import FotoAdmi from "../assets/karine.png";
+import FotoOrga from "../assets/Gertudes.jpeg";
+import FotoAdmi from "../assets/Gertudes.jpeg";
+import FotoRecl from "../assets/Vinicius.jpeg";
+// import FotoGes from "../assets/Arthur.jpeg";
 
 function Sobre() {
   const equipe = [
@@ -43,7 +45,7 @@ function Sobre() {
     {
       nome: "Gertrudes",
       cargo: "Organização",
-      foto: "https://via.placeholder.com/150",
+      foto: FotoOrga,
     },
     {
       nome: "Luana",
@@ -54,6 +56,16 @@ function Sobre() {
       nome: "Matheus Fontenele",
       cargo: "Desenvolvedor Web",
       foto: FotoProga,
+    },
+    {
+      nome: "Vinicius",
+      cargo: "Operacional de reclicagem",
+      foto: FotoRecl,
+    },
+    {
+      nome: "Arthur",
+      cargo: "Gestor Educacional",
+      foto: "https://via.placeholder.com/150",
     },
     
     
@@ -79,19 +91,19 @@ function Sobre() {
         <div className="max-w-4xl mx-auto space-y-6 text-lg text-gray-700 dark:text-gray-300 text-justify">
           <p>
             A Robótica Sustentável nasceu em 2016 como um projeto em uma escola pública de Fortaleza, idealizado
-por André Cardoso, professor de Ciências Biológicas, com o objetivo de transformar resíduos eletrônicos
-em educação e inovação. Inicialmente chamada de “Robótica de Baixo Custo”, a iniciativa uniu professores
-e alunos em um laboratório improvisado com recursos limitados, mas com um propósito grandioso: capacitar
-jovens, promover a inclusão digital e transformar realidades.
+            por André Cardoso, professor de Ciências Biológicas, com o objetivo de transformar resíduos eletrônicos
+            em educação e inovação. Inicialmente chamada de “Robótica de Baixo Custo”, a iniciativa uniu professores
+            e alunos em um laboratório improvisado com recursos limitados, mas com um propósito grandioso: capacitar
+            jovens, promover a inclusão digital e transformar realidades.
           </p>
 
           <p>
-          O projeto começou com oficinas que utilizavam sucata eletrônica para montar robôs e experimentar
-conceitos científicos. A primeira conquista veio em uma Feira de Ciências estadual, onde a equipe ficou em
-2o lugar. Essa vitória não apenas abriu portas para competições maiores, mas também trouxe um senso de
-propósito para alunos e professores. Ao longo dos anos, a Robótica Sustentável se consolidou como uma
-referência em educação ambiental e tecnológica, ampliando seu alcance com campanhas de
-conscientização, oficinas, exposições e parcerias com empresas e instituições de ensino.
+            O projeto começou com oficinas que utilizavam sucata eletrônica para montar robôs e experimentar
+            conceitos científicos. A primeira conquista veio em uma Feira de Ciências estadual, onde a equipe ficou em
+            2o lugar. Essa vitória não apenas abriu portas para competições maiores, mas também trouxe um senso de
+            propósito para alunos e professores. Ao longo dos anos, a Robótica Sustentável se consolidou como uma
+            referência em educação ambiental e tecnológica, ampliando seu alcance com campanhas de
+            conscientização, oficinas, exposições e parcerias com empresas e instituições de ensino.
           </p>
         </div>
       </section>
