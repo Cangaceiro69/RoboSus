@@ -5,7 +5,7 @@ import Carrinho from "../assets/Carrinho.jpeg";
 import Ventilador from "../assets/Ventilador.jpeg";
 import Torre from "../assets/TorreEolica.jpeg";
 // import Banner from "../assets/0011.png";
-import Banner from "../assets/10585854.jpg";
+import Banner from "../assets/logo.png";
 
 const LOGO_DEV_PUBLIC_KEY = "pk_cTL0TMS5Th6nYCg8Z8DFig";
 
